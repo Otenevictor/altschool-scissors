@@ -1,4 +1,4 @@
-import Footer from "./components/Footer"
+// import Footer from "./components/Footer"
 // import ResultShort from "./components/ResultShort"
 // import ResultShort from "./components/resultShort"
 // import InputShortner from "./components/inputShortner"
