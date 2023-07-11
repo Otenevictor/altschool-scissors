@@ -1,32 +1,31 @@
-import axios from "axios";
-import { ClipBoard } from "copy-to-clipboard-typescript";
-import { useEffect, useState } from "react";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
 
 
-const LinkResult = ( {inputValue}) => {
-console.log(inputValue);
-    const [shortenLink, setShortenLink] = useState("");
-    const [copied, setCopied] = useState(false);
-    const [loading, setLoading] = useState(false);
+// const LinkResult = ( {inputValue}) => {
+// console.log(inputValue);
+//     const [shortenLink, setShortenLink] = useState("");
+//     const [copied, setCopied] = useState(false);
+//     const [loading, setLoading] = useState(false);
 
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const res = await axios(`https://api.shrtco.de/v2/shorten?url=${inputValue} `);
-        setShortenLink(res.data.result.full_short_link);
-      } catch (err) {
+//     const fetchData = async () => {
+//       try {
+//         setLoading(true);
+//         const res = await axios(`https://api.shrtco.de/v2/shorten?url=${inputValue} `);
+//         setShortenLink(res.data.result.full_short_link);
+//       } catch (err) {
         
-      } finally {
-  };
+//       } finally {
+//   };
 
 
-useEffect(() => {
-const timer = setTimeout(() => {
-setCopied(false);
-}, 1000);
-return ()  => clearTimeout(timer);
-}, [copied]);
-console.log(shortenLink);
+// useEffect(() => {
+// const timer = setTimeout(() => {
+// setCopied(false);
+// }, 1000);
+// return ()  => clearTimeout(timer);
+// }, [copied]);
+// console.log(shortenLink);
 
 // useEffect (() => {
 //   if(inputValue.length) {
@@ -36,32 +35,28 @@ console.log(shortenLink);
 // }
 
 
-  return (
-    <>
+//   return (
+//     <>
        
-    <div className="text-white h3">
-        <p>LinkResult</p>
-        </div>
-    <div className="row">
-    <div className="col">
-  <input
-    type="text"
-    placeholder="results of url."
-    className="m-4  me-5 md:w-50 lg:w-25 p-3  px-5 py-3 border border-primary rounded-3 text-primary "
-  />
-  <ClipBoard text={shortenLink}
-  onCopy= {() => setCopied(true)}>
-  <button type="button" id="btn btn-primary btn mt-4 ms-4" className={copied ? "copied" : ""}> copy to clipbord </button>
-  </ClipBoard>
-  </div>
+//     <div className="text-white h3">
+//         <p>LinkResult</p>
+//         </div>
+//     <div className="row">
+//     <div className="col">
+//   <input
+//     type="text"
+//     placeholder="results of url."
+//     className="m-4  me-5 md:w-50 lg:w-25 p-3  px-5 py-3 border border-primary rounded-3 text-primary "
+//   />
+//   </div>
+//   </div>
 
-  </div>
-  </>
-  );
-}
-    }
+//   </>
+//   );
+// }
+//     }
   
     
 
 
-export default LinkResult;
+// export default LinkResult;
