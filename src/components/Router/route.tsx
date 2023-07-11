@@ -1,21 +1,24 @@
-// import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
+import HomePage from '../../pages/HomePage';
+import LoginPage from '../../pages/LoginPage';
+import SignupPage from '../../pages/SignUp';
 
-function SubApp() {
+function RouteApp() {
   return (
     <>
     
-    {/* <Routes>
+    <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/login" element={< LoginPage />} />
+      <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage/>} />
-      <Route path="*" element={<NotFound />} />
+      {/* <Route path="*" element={<NotFound />} />
       <Route path="/dashboard" element={ <Dashboard /> } />
       <Route path="/urlshortener" element={ <UrlPage/> } />
       <Route path="/qrcodegenerator"
-        element={ <LinkShortener />} />
-    </Routes> */}
+        element={ <LinkShortener />} /> */}
+    </Routes>
   </>
   )
 }
 
-export default SubApp;
+export default RouteApp;

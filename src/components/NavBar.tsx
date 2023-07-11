@@ -7,7 +7,7 @@ const Navbar = () => {
 
 <nav className="navbar navbar-expand-lg bg-body-tertiary mb-5">
   <div className="container-fluid">
-    <Link className="navbar-brand ms-5" to="#"><img src= { Logo } alt="logo" className=" md:ml-40  w-20 "/></Link>
+    <Link className="navbar-brand ms-5" to="/"><img src= { Logo } alt="logo" className=" md:ml-40  w-20 "/></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -31,13 +31,13 @@ const Navbar = () => {
       </ul>
       <ul className="navbar-nav  ms-5 ml-5">
         <li className="nav-item">
-          < Link className="nav-link active ms-5 text-dark " aria-current="page" to="#">Log in</Link>
+          < Link className="nav-link active ms-5 text-dark " aria-current="page" to="/login">Log in</Link>
         </li>
         <li className="nav-item ms-5">
-          < Link className="nav-link text-dark px-3 py-2 text-white bg-primary hover:bg-white hover:text-dark rounded-pill " to="#">Try for Free</Link>
+          < Link className="nav-link text-dark px-3 py-2 text-white bg-primary hover:bg-white hover:text-dark rounded-pill " to="/">Try for Free</Link>
         </li>
         <li className="nav-item ms-5">
-          < Link className="nav-link text-dark  px-3 py-2 text-white bg-primary hover:bg-white hover:text-dark rounded-pill" to="#">Sign up</Link>
+          < Link className="nav-link text-dark  px-3 py-2 text-white bg-primary hover:bg-white hover:text-dark rounded-pill" to="/signup">Sign up</Link>
         </li>
         </ul>
     </div>
