@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify/react": "^4.1.1",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
     "copy-to-clipboard-typescript": "^1.5.0",
@@ -21,6 +22,7 @@
     "react-dom": "^18.2.0",
     "react-error-boundary": "^4.0.10",
     "react-hook-form": "^7.45.0",
+    "react-icons": "^4.10.1",
     "react-router-dom": "^6.12.1",
     "react-shorten-url": "^1.0.5",
     "tailwindcss": "^3.3.2"

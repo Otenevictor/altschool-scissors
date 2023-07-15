@@ -9,7 +9,7 @@ import teams from "../assets/Images/teams.png";
 import Navbar from "../components/NavBar";
 import stripe from "../assets/Images/stripe.png";
 import "../assets/css/home.css";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import Accordion from "../components/Accordion";
 
 
@@ -83,18 +83,19 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="ms-3 md:mt-20 mt-10 md:ml-44 text-center justify-content-center">
-          <img src={basic} alt="basic" className=" md:h-80 md:w-65 img-fluid" />
-          <img
+        <div className="ms-1 text-center d-flex g-2">
+          <div className="">
+          <img src={basic} alt="basic" className=" w-30 img-fluid" /></div>
+          <div className=""> <img
             src={professional}
             alt="professional"
-            className=" md:h-82 md:w-70 img-fluid "
-          />
-          <img
+            className="  img-fluid "
+          /></div>
+         <div className=""> <img
             src={teams}
             alt="teams"
-            className=" md:h-80 md:w-65 img-fluid  "
-          />
+            className="  w-30 img-fluid  "
+          /></div>
         </div>
 
         <div className=" mt-2 mb-3 text-center justify-content-center  mt-5 ml-4 md:ml-96">
@@ -176,7 +177,7 @@ const HomePage = () => {
       </div>
     </div>
     <div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
     </>
   );
