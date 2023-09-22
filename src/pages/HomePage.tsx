@@ -159,7 +159,7 @@ const HomePage = () => {
               Revolutionizing Link Optimization
             </h2>
             <Link
-              to="/SignupPage "
+              to="/signup "
               className=" mb-5 mt-4 font-serif  btn-primary text-white btn border border-none rounded-pill"
             >
               {" "}

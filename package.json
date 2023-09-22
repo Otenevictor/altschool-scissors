@@ -15,6 +15,7 @@
     "bootstrap": "^5.3.0",
     "copy-to-clipboard-typescript": "^1.5.0",
     "cors": "^2.8.5",
+    "firebase": "^10.1.0",
     "http-proxy-middleware": "^2.0.6",
     "postcss": "^8.4.24",
     "react": "^18.2.0",
